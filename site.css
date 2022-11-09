@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+
+/*Zerar o Css do navegador*/
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+/*Fundo de Tela*/
+
+html {
+    width: 100%;
+    height: 100%;
+  
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth; /*deixa a rolagem da pagina mais suave*/
+    
+
+
+}
+
+body {
+   background: linear-gradient(rgba(47, 47, 47, 0.8), rgb(33, 33, 33)), url(img/man-1282232_960_720.jpg);
+    background-position: center center; /*centro*/
+    background-size: cover; /*mais p perto*/
+    background-position-y: 0px; /*desce mais a foto*/
+    background-repeat: no-repeat;
+ 
+   
+}
+
+/*Menu - Header - NavBar*/
+
+header{
+    width: 100%; /*largura inteira da tela*/
+    height: 12vh; /*altura do degrade do cabeçalho*/
+    background-color: rgba(6, 5, 5, 0.2);
+    position: fixed;
+}
+
+.menugeral {
+    text-transform: uppercase;
+    display: flex; /*logo de um lado e menu do outro*/
+    height: 100%;
+    justify-content: space-around; /*Distanciamento entre eles mesmos, e um distanciamento igual entre as bordas*/
+    align-items: center; /*faz todos os itens do cabeçalho ficarem no meio dentro daqueles 12 vh*/
+    font-size: 1.8rem; /*só vai mudar quando configurar a logo*/
+    
+}
+
+.logo {
+    font-size: 1.8rem; /*tamanho da logo*/
+    letter-spacing: 0.4rem; /*espaçamento das letras*/
+    cursor: pointer; /*ativa a maozinha ao colocar o mouse em cima */
+
+}
+
+.menugeral .lista {
+    display: flex; /*um do lado do outro*/
+    list-style: none; /*tirar a bolinha branca*/
+    gap: 10px; /*distanciamento entre os itens*/
+}
+
+.menugeral .lista a{
+    text-decoration: none; /*tirar o sublinhado debaixo do link*/
+    color: white; /*tirar o roxo*/
+    padding: 1.5rem; /*aumenta a area de contato*/
+}
+
+/*Centro - COnteúdo Principal*/
+
+main {
+    height: 100vh; /*pra ocupar a tela toda pq o de 93 nao tava funcionando*/
+    display: flex;
+    justify-content: center; /*vai pro meio horizontalmente*/
+    align-items: center; /*vai pro meio no eixo x*/
+}
+
+.menucentro {
+    display: flex;
+    flex-direction: column; /*pra ficar um em cima do outro*/
+    justify-content: center; /*nesse caso, vai alinhar verticalmente devido ao uso do column*/
+    align-items: center;
+
+}
+
+/*Textos*/
+
+
+.titulo {
+    margin-top: 10rem; /*descer um pouco o texto*/
+    width: 650px; /*redimensiona o texto e a quebra dele*/
+    font-size: 4rem;
+    margin-bottom: 2rem; /*pra se distanciar do de baixo*/
+    text-align: center;
+   
+   
+}
+
+.subtitulo {
+    margin-bottom: 6rem; /*se distanciar dos botões*/
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(165, 165, 165);
+}
+
+/*Botões*/
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*separar os botoes*/
+}
+
+.botoes button {
+    width: 250px; /*largura do botao*/
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white; /*cor do texto*/
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    border-radius: 20px;
+    
+}
+
+/*Sessões*/
+
+section {
+    width: 100%; 
+    min-height: 100vh; /*vai ocupar toda a altura da tela*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    
+}
+
+section h1{
+    font-size: 70px;
+    color: white;
+
+}
+
+section:nth-of-type(1){
+    background-image: url(img/quemsomos.webp);
+}
+
+section:nth-of-type(2){
+    background-image: url(img/serviços.jfif);
+
+}
+
+section:nth-of-type(3){
+    background-image: url(img/aulas.webp);
+    
+}
+
+section:nth-of-type(4){
+    background-image: url(img/contato.webp);
+    
+}
